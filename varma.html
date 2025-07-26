@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <h2 id="special"> </h2>
+        <h3 id="normal"> </h3>
+
+        <script type="text/javascript">
+            var name=window.prompt("please enter your name");
+            document.write("<h1>hello "+name+" welcome to my website<h1>");
+            document.getElementById("special").innerHTML="i am from inner html part";
+            document.getElementById("normal").innerHTML="i am from hedder2 from javascript";
+        </script>
+    </head>
+    <body>
+            <form method="post" action = "https://script.google.com/macros/s/AKfycby3Ut6rp4ucqiJSzFviIpG_eF7OacepxtdycYhcbKj2xOlX_Vhi8Q6svtFwIL6cN6yYHg/exec">
+            <fieldset><fieldset>    
+            <legend>personal information</legend>
+            <input required type="text" name="stuname" placeholder="enter your name"
+            oninvalid="this.setCustomValidity('name cannot be blank')"
+            oninput= "this.setCustomValidity('')"> <br> <br>
+            <input required type="number" name="age" placeholder="enter your age"> <br> <br>
+            <input required type="password" name="pwd" placeholder="password"
+            oninvalid="this.setCustomValidity('password must contain one upper case one lower case one spicial charater')"
+            oninput= "this.setCustomValidity('')"> <br><br>
+            <textarea required name="add" cols="30" rows="4" placeholder="address"></textarea> <br> <br>
+            <input required type="email" name="email" placeholder="email" > <br> <br>
+            DOB: <input type="date" name="dob"><br> <br>
+                Gender: <input type="radio" name="gender" value="M">male
+                <input type="radio" name="gender" value="F">female
+                <input type="radio" name="gender" value="T">third<br> <br>
+            </fieldset></fieldset>
+                Elective subject:
+               <input type="checkbox" name="elect" value="ML">mechine learning
+               <input type="checkbox" name="elect" value="CS">cyber security
+               <input type="checkbox" name="elect" value="AL">artifical ingeenering<br> <br>
+               <input type="checkbox" name="elect" value="DS">data science
+               <input type="checkbox" name="elect" value="JS">java script
+               <input type="checkbox" name="elect" value="PY">python<br> <br>
+                <input type="submit" value="save">
+                <input type="reset" value="clear">
+        </form>
+        
+    </body>
+</html>
+
